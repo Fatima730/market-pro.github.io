@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width,initial scale=1.0"/>
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="fontawesome-free-6.1.0-web\css\all.min.css">
+    <link rel="stylesheet" href="fontawesome-free-6.1.0-web\css\all.css">
+    <link rel="stylesheet" href="fontawesome-free-6.1.0-web\css\fontawesome.css">
+    <link rel="icon"href="Logo 500x500 px (5).png">
+
+    <title>For Investors | Market-Pro</title>
+    <link rel="shortcut icon" href="market-prologo.png">
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://smtpjs.com/v3/smtp.js">
+        
+    </script>
+
+
+<style type="text/css">
+    *{
+        margin:0;
+        padding:0;
+        font-family: 'Poppins', sans-serif;
+        }
+    
+        .header{
+    min-height: 60vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(39, 61, 99, 0.7),rgba(39, 61, 99, 0.7)),url(hunters-race-MYbhN8KaaEc-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+        }
+    
+        @font-face {
+               font-family:"josefinSans";
+               src: url(JosefinSans-VariableFont_wght.ttf);
+               text-align: justify;
+           }
+    
+    nav{
+    
+        height: 6rem;
+        width: 100%;
+        display: flex;
+        background-color: #273D63;
+        justify-content: space-between;
+        align-items: center;
+        
+        padding-left: 2%;
+        padding-right: 6%;
+        
+        
+        
+ }
+    
+
+
+ .LogoContainer{
+        font-family:  'Arial Narrow Bold', sans-serif;
+        padding-left: 2px;
+        padding-top: 1%;
+        font-size: 150%;
+        margin-left: 2px;
+        text-align: justify;
+        color: #ffffff;
+       
+    }
+.nav-links{
+    flex: 1;
+    text-align: right;
+    }
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 30px 40px;
+    position: relative;
+    color: #ffffff;
+  
+    }
+.nav-links ul li a{
+    color: #92BBCE;
+    text-decoration: none;
+    font-size: 18px;
+    
+    }
+.nav-links ul li ::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #92BBCE;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+    }
+.nav-links ul li:hover ::after{
+    width: 100%;
+    }
+.fa{
+    display: none;
+    }
+.a{
+    height: 3px;
+    width: 25px;
+    background-color: #92BBCE;
+    margin-top: 4px;
+    }
+    
+    .LogoIMG{
+        height: 90%;
+text-align: justify;
+    }
+
+
+@media(max-width: 900px){
+        nav{
+            height: 5rem;
+            background-size: cover;
+    position: relative;
+            }
+        }
+    @media(max-width: 900px){
+        nav{
+            height: 5rem;
+            }
+        .text-box h1{
+            font-size: 20px;
+            }
+        .nav-links ul li{
+            display: block;
+            color: #ffffff;
+            text-decoration: none;
+            }
+        .nav-links ul li a{
+            color: #eee;
+            }
+        .nav-links{
+            position: fixed;
+            background:#92BBCE;
+            height: 100vh;
+            width: 200px;
+            top: 0;
+            right: -200px;
+            text-align: left;
+            z-index: 2;
+            transition: 1s;
+            
+        
+            }
+        nav .fa{
+            display: block;
+            color: #eee;
+            margin: 5px;
+            font-size: 22px;
+            cursor: pointer;
+            }
+        .fa-close{
+            padding-left: 10px;
+            padding-top: 10px;
+            }
+        .nav-links ul{
+            padding: 30px;
+            }
+        }
+
+
+
+        .investor{
+    position: absolute;
+    top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  text-align: center;
+}
+
+.investor h2{
+    font-size: 4vw;
+    font-family: Verdana;
+    font-weight: bold;
+    color: aliceblue;
+}
+
+.letter{
+    display: block;
+    align-items: center;
+    margin-top: 5%;
+    padding-left: 15%;
+    padding-bottom: 7%;
+    
+}
+
+.proposal{
+    text-align: center;
+    margin-top: 5%;
+}
+
+.proposal h1{
+    color: #41444a;
+    font-weight: bold;
+    font-size: 25px;
+    font-family: Verdana;
+}
+
+
+
+
+.footer{
+    display: block;
+    overflow: hidden;
+    padding: 70px 0;
+    box-sizing: border-box;
+    background-color: #273D63;
+
+}
+
+.inner-footer{
+    display: block;
+    margin: 0 auto;
+    width: 1100px;
+    height: 100%;
+}
+
+.inner-footer .footer-logo{
+    width: 35%;
+    float: left;
+    height: 100%;
+    display: block;
+}
+
+.inner-footer .footer-logo img{
+    width: 200px;
+    height: auto;
+}
+.inner-footer .footer-third{
+    width: calc(21.6666666667% - 20px);
+    margin-right: 10px;
+    float: left;
+    height: 100%;
+}
+
+.inner-footer .footer-third:last-child{
+    margin-right: 0;
+
+}
+
+.inner-footer .footer-third h1{
+    font-family: Verdana;
+    font-size: 22px;
+    color: #ffffff;
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.inner-footer .footer-third a{
+    font-family: Verdana;
+    font-size: 15px;
+    color: #ffffff;
+    font-weight: 200;
+    display: block;
+    width: 100%;
+    padding-bottom: 5px;
+}
+
+
+.inner-footer .footer-third li{
+    display: inline-block;
+    padding: 0 5px;
+    font-size: 20px;
+}
+
+.inner-footer .footer-third span{
+    color: #ffffff;
+    font-family: Verdana;
+    font-size: 16px;
+    font-weight: 200;
+    display: block;
+    width: 100%;
+    padding-top: 20px ;
+}
+
+@media(max-width: 450px){
+    .footer .inner-footer{
+        width: 90%;
+    }
+    .inner-footer .footer-logo,
+    .inner-footer .footer-third{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
+
+
+
+
+</style>
+
+</head>
+
+<body>
+
+<div class="header">
+   
+    <nav>
+       <img src="marketProLogoNoText1.png" width="200px">
+       <P class="LogoContainer" href="Logo.JPG" alt="" width="150px" style="float:left; font-weight: 300%; margin-top: 0.02%;"></P>
+       
+           <div class="nav-links" id="navLinks">
+           <i class="fa fa-close" aria-hidden="true" onclick="hideMenu()"></i>
+           
+               <ul>
+                   <a  style="text-decoration:none"href="index.html"><li><href> Home </href></li></a>
+                   <a  style="text-decoration:none"href="services.html"><li><href >Services</href></li></a>
+                   <a  style="text-decoration:none"href="investors.html"><li><href >For Investors</href></li></a>
+                   <a  style="text-decoration:none"href="finacial.html"><li><href >Financial Synopsis</href></li></a>
+                   <a  style="text-decoration:none"href="presentation.html"><li><href >Presentation</href></li></a>
+                   <a  style="text-decoration:none"href="contact.html"><li><href> Contact Us</href></li></a>
+         
+               </ul>
+           </div>
+   
+           <i class="fa fa-menu" aria-hidden="true" onclick="showMenu()">
+               <div class="a"></div>
+               <div class="a"></div>
+               <div class="a"></div>
+               <div class="a"></div>
+           </i>
+       </nav>
+  
+       
+
+       <script>
+           var navLinks = document.getElementById("navLinks");
+               function showMenu() {
+                   navLinks.style.right = "1px";
+               }
+               function hideMenu() {
+                   navLinks.style.right = "-200px";
+               }
+       </script>
+        </div>
+
+
+
+
+        <div class="investor">
+            <h2>For Our Investors</h2>
+        </div>
+        
+<div class="proposal">
+    <h1>Market-Pro Buisness Proposal</h1>
+</div>
+
+        <div class="letter">
+           
+            <embed src="Buisness Assignment-letter.pdf" width="1050" height="900">
+        </div>
+
+
+
+
+        <div class="footer">
+            <div class="inner-footer">
+                <div class="footer-logo">
+                    <img src="marketProLogoNoText1.png" alt="">
+                </div>
+                <div class="footer-third">
+                    <h1>Need Help?</h1>
+                    <a href="">Terms &amp; Conditions</a>
+                    <a href="">Privacy Policy</a>
+                </div>
+        
+        
+                <div class="footer-third">
+                    <h1>Pages</h1>
+                    <a href="index.html">Home</a>
+                    <a href="services.html">Services</a>
+                    <a href="investors.html">For Investors</a>
+                    <a href="finacial.html">Financial Synopsis</a>
+                    <a href="presentation.html">Presentation</a>
+                    <a href="contact.html">Contact Us</a>
+                </div>
+        
+                <div class="footer-third">
+                    <h1>Follow Us!</h1>
+                    <li><a href=""><i class="fab fa-facebook-square" aria-hidden="true"></i></a></li>
+                    <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                    <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                    <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+        
+                    <span>
+                        © Market-Pro 2021-2022
+                        Mississauga, Ontario
+                        1238 Sesame Street Blvd
+                        L5M 321
+                        market-pro@email.com
+                        www.marketpro.com
+                        Tel: 905-123-321
+                    </span>
+                </div>
+        
+            </div>
+        
+        </div>
+        
+        
+        
+        
+        
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
